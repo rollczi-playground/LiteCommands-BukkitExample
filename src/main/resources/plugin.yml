@@ -1,0 +1,5 @@
+name: LiteCommands-BukkitExample
+version: '${version}'
+main: dev.rollczi.litecommands.example.BukkitExample
+api-version: 1.17
+authors: [ Rollczi ]
