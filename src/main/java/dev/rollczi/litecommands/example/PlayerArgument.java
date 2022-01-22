@@ -1,5 +1,6 @@
 package dev.rollczi.litecommands.example;
 
+import dev.rollczi.litecommands.LiteInvocation;
 import dev.rollczi.litecommands.inject.SingleArgumentHandler;
 import dev.rollczi.litecommands.valid.ValidationCommandException;
 import dev.rollczi.litecommands.valid.ValidationInfo;
@@ -12,7 +13,7 @@ import java.util.List;
 public class PlayerArgument implements SingleArgumentHandler<Player> {
 
     @Override
-    public Player parse(String argument) throws ValidationCommandException {
+    public Player parse(LiteInvocation invocation, String argument) throws ValidationCommandException {
         Player player = Bukkit.getPlayer(argument);
 
         if (player == null) {

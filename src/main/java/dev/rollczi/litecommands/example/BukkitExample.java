@@ -20,6 +20,6 @@ public final class BukkitExample extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        this.liteCommands.getCommandManager().unregisterCommands();
+        this.liteCommands.getPlatformManager().unregisterCommands();
     }
 }

@@ -9,13 +9,15 @@ version = '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 
-    maven { url "https://repo.panda-lang.org/releases" }
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url 'https://repo.panda-lang.org/releases/' }
 }
 
 dependencies {
-    compileOnly 'org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT'
-    implementation 'dev.rollczi.litecommands:core:1.2.0'
-    implementation 'dev.rollczi.litecommands:bukkit:1.2.0'
+    compileOnly 'org.spigotmc:spigot-api:1.18-R0.1-SNAPSHOT'
+    implementation "org.panda-lang:expressible:1.1.12"
+    implementation 'dev.rollczi.litecommands:core:1.4.3'
+    implementation 'dev.rollczi.litecommands:bukkit:1.4.3'
 }
 
 java {
